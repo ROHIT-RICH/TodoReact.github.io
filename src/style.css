@@ -1,0 +1,87 @@
+/* Basic reset to remove default margins and paddings */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  height: 94vh;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Rounded corners on the left */
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+button {
+  margin: 0 10px 0 0 ;
+  padding: 10px 15px;
+  color: white;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 4px; /* Rounded corners on the right */
+  cursor: pointer;
+  margin-left: -1px; /* Remove gap between input and button */
+  height: 42px; /* Match input height */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.button-wrapper {
+  flex-shrink: 0; /* Prevent the button from shrinking */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #777;
+}
+
+button.delete {
+  background-color: #dc3545;
+}
+
+button.delete:hover {
+  background-color: #c82333;
+}
